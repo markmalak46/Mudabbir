@@ -1,0 +1,418 @@
+@media screen and (min-width:640px) {
+    #header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-items {
+        width: calc(100% - 190px);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-items .online {
+        width: fit-content;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .header-action {
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    .person-info .person-name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .person-name .name {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--gray-900);
+    }
+
+    .person-name .description {
+        display: none;
+    }
+
+    #notifications-card>h3 {
+        font-size: 1.125rem;
+    }
+
+
+
+}
+
+@media screen and (min-width:768px) {
+    #sidebar {
+        position: fixed;
+        display: block;
+        width: 4.6875rem;
+        height: 100dvh;
+        scrollbar-width: thin;
+        scrollbar-color: #9ca3af4d transparent;
+        overflow-y: scroll;
+        background-color: white;
+        z-index: 10;
+    }
+
+    #sidebar .content {
+        padding: 12px;
+    }
+
+    .content .logo {
+        margin-bottom: 32px;
+    }
+
+    .logo-title h1 {
+        font-size: 2.25rem;
+    }
+
+    .logo-title span {
+        font-size: 0.875rem;
+    }
+
+    .side-links ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        list-style-type: none;
+    }
+
+    .side-links .link {
+        padding: 0.75rem 0.5rem;
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        color: var(--gray-600);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .side-links .home {
+        background-color: var(--blue-50);
+        color: var(--blue-600);
+        border: 0.0625rem solid var(--blue-100);
+        border-radius: 12px;
+    }
+
+    .actions {
+        margin-block: 2rem 0;
+        padding: 0;
+    }
+
+    .actions .actions-title {
+        padding-inline: 0.5rem;
+        color: var(--gray-700);
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .actions-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .actions-btns button {
+        padding: 0.75rem 0;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        border: none;
+        transition: 0.2s all;
+        cursor: pointer;
+    }
+
+    .side-links .link:hover,
+    .actions-btns button:hover {
+        border-radius: 0.75rem;
+        background-color: var(--bg-hover);
+    }
+
+    .actions-btns button:hover {
+        transform: translate(2px);
+    }
+
+    .side-links .home:hover {
+        background-color: var(--blue-50);
+    }
+
+    .btn-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+    }
+
+    .btn-icon i {
+        font-size: 1rem;
+    }
+
+    .actions-btns .plane {
+        background-color: var(--blue-100);
+        color: var(--blue-600);
+    }
+
+    .actions-btns .plus {
+        background-color: var(--green-100);
+        color: var(--green-600);
+    }
+
+    .actions-btns .receipt {
+        background-color: var(--purple-100);
+        color: var(--purple-600);
+    }
+
+    .actions-btns .chart {
+        background-color: var(--orange-100);
+        color: var(--orange-600);
+    }
+
+    .actions-btns button span {
+        font-size: 0.875rem;
+        color: var(--gray-700);
+        font-weight: 600;
+    }
+
+    #body {
+        width: calc(100% - 4.6875rem);
+        padding: 2rem;
+    }
+
+    .header-items {
+        flex-direction: row;
+    }
+
+    .header-items .online {
+        font-size: 0.875rem;
+        padding: 0.375rem 0.75rem;
+    }
+
+    .header-action .person-info {
+        padding: 0.5rem 1rem;
+    }
+
+    .person-info .person-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .person-name .name {
+        font-size: 0.875rem;
+    }
+
+    .person-name .description {
+        display: block;
+        color: var(--gray-500);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .header-icon {
+        gap: 8px;
+    }
+
+    .header-icon button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .header-icon button i {
+        color: var(--gray-600);
+        font-size: 1rem;
+    }
+
+    #summary-cards {
+        flex-direction: row;
+    }
+
+    .item-card {
+        width: calc((100% - 24px)/3);
+    }
+
+    .item-card .value {
+        font-size: 1.5rem;
+    }
+
+    .p-rem {
+        padding: 1.5rem;
+        background-color: white;
+    }
+
+    #dashboard-widgets {
+        /* padding: 1.5rem; */
+    }
+
+    .widgets {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #dashboard-widgets {
+        flex-direction: row;
+    }
+
+    #notifications-card,
+    #income-vs-expenses-card {
+        width: calc((100% - 1rem)/2);
+    }
+
+    table {
+        font-size: 0.875rem;
+    }
+
+    .transaction-tbl thead th {
+        padding: 0.75rem 0.5rem;
+
+    }
+
+    tr td {
+        padding: 1rem 0.5rem;
+    }
+
+    #money-section{
+        flex-direction: row;
+    }
+
+    #account{
+        flex-direction: row;
+    }
+    #monthly-bills,
+#account-summary{
+    width: calc((100% - 1rem)/2);
+}
+.total-value{
+    width: 100%;
+}
+.remaining-value{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 100%;
+    }
+    #budget,
+#payment-methods{
+    width: calc((100% - 1rem)/2);
+}
+}
+
+
+@media screen and (min-width:1024px) {
+    .item-card .value{
+        font-size: 2.25rem;
+    }
+    .total-value{
+    width: 50%;
+}
+.remaining-value{
+    width: 50%;
+    
+}
+
+}
+
+@media screen and (min-width:1280px) {
+    #sidebar {
+        width: 15.9375rem;
+    }
+
+    .d-block {
+        display: block;
+    }
+    #sidebar .logo-title{
+        display: block;
+    }
+    #sidebar .content {
+        padding: 24px;
+    }
+
+    .logo .logo-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .logo .logo-icon i {
+        font-size: 1.25rem;
+    }
+
+    .side-links .link {
+        align-items: center;
+        justify-content: start;
+        padding: 0.75rem 1rem;
+    }
+
+    .actions-btns button {
+        padding: 0.75rem;
+
+    }
+
+    #body {
+        width: calc(100% - 15.9375rem);
+    }
+
+    #notifications-card,
+    #income-vs-expenses-card {
+        width: 100%
+    }
+
+    
+    #income-vs-expenses-card{
+        height: 100%;
+    }
+    #transactions-card {
+        width: calc(100% - (33% + 1rem));
+    }
+
+    .widgets{
+        flex-direction: column;
+        width: 33%;
+    }
+    #dashboard-widgets {
+        display: flex;
+        /* gap: 1rem; */
+        flex-direction: row;
+    }
+
+    #account{
+        flex-direction: column;
+        order:0
+    }
+    #account,
+    #budget,
+#payment-methods{
+    width: calc((100% - 2rem)/3);
+
+}
+    #monthly-bills,
+#account-summary{
+    width: 100%
+}
+
+.budget-item .cat-data{
+    flex-direction: column;
+}
+.cat-data .cat-value{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+}
+
+@media screen and (min-width:1536px) {
+    
+.budget-item .cat-data{
+    flex-direction: row;
+}
+}
